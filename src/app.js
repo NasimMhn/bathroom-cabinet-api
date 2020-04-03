@@ -5,7 +5,6 @@ import mongoose, { Query } from 'mongoose' //do we need this?
 
 
 import methodOverride from 'method-override' //do we need this?
-// import fileUpload from 'express-fileUpload'
 import ResetDB from './resetdb'
 
 

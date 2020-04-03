@@ -12,6 +12,8 @@ import createError from 'http-errors'
 
 const router = express.Router()
 
+
+
 // ------------------PRODUCT ROUTES ------------------------- //
 
 // Get product by id
@@ -39,7 +41,7 @@ router.get('/id/:id', async (req, res, next) => {
 
 // POST a new product
 router.post('/', async (req, res, next) => {
-  console.log("POST /MyNewCabinetProduct ", req.body)
+  console.log("POST /Product ", req.body)
   try {
     const product = await new Product(req.body).save()
     res.json(product)
@@ -52,7 +54,7 @@ router.post('/', async (req, res, next) => {
 
 // POST a product as finished/unfinished
 router.post('/finished/id/:id', async (req, res, next) => {
-  console.log("POST /finished/id/ ", req.body)
+  console.log("POST /finished/ ", req.body)
   try {
     const product = await Product.findById(req.params.id)
     product.finished = !product.finished

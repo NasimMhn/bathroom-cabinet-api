@@ -52,5 +52,36 @@
       }
     ],
     "finished": false
+  },
+  {
+    "_id": "5e5b973544ae6a86546a8989",
+    "brand": "Moroccanoil",
+    "name": "Moroccanoil Original Oil Treatment",
+    "images": {
+      "url": "https://www.pricerunner.se/product/400x400/1914511929/Moroccanoil-Original-Oil-Treatment-100ml.jpg"
+    },
+    "size": {
+      "amount": 100,
+      "unit": "ml"
+    },
+    "prices": [
+      {
+        "price": 349,
+        "website": "5e5b8e15999899821c5f71f5"
+      },
+      {
+        "price": 289,
+        "website": "5e58383cf6eea26b079e5908"
+      },
+      {
+        "price": 230,
+        "website": "5e58383cf6eea26b079e5903"
+      },
+      {
+        "price": 318,
+        "website": "5e58383cf6eea26b079e5901"
+      }
+    ],
+    "finished": false
   }
 ]
