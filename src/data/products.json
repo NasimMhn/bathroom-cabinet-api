@@ -1,0 +1,56 @@
+[
+  {
+    "_id": "5e5b973544ae6a86546a8979",
+    "name": "Toning Lotion Normal/Dry Skin",
+    "brand": "Clarins",
+    "images": {
+      "url": "toning-lotion.jpg"
+    },
+    "size": {
+      "amount": 400,
+      "unit": "ml"
+    },
+    "prices": [
+      {
+        "price": 100,
+        "website": "5e5b8e15999899821c5f71fa"
+      },
+      {
+        "price": 120,
+        "website": "5e58383cf6eea26b079e590c"
+      },
+      {
+        "price": 98,
+        "website": "5e58383cf6eea26b079e590b"
+      },
+      {
+        "price": 80,
+        "website": "5e58383cf6eea26b079e590e"
+      }
+    ],
+    "finished": true
+  },
+  {
+    "_id": "5e5b973544ae6a86546a897a",
+    "brand": "Exuviance",
+    "name": "SkinRise Bionic Tonic",
+    "images": {
+      "url": "Exuviance-SkinRise-Bionic-Tonic-36-Pads.jpg"
+    },
+    "size": {
+      "amount": 60,
+      "unit": "ml"
+    },
+    "prices": [
+      {
+        "price": 100,
+        "website": "5e58383cf6eea26b079e591a"
+      },
+      {
+        "price": 120,
+        "website": "5e58383cf6eea26b079e591b"
+      }
+    ],
+    "finished": false
+  }
+]
