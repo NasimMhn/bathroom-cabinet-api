@@ -4,7 +4,7 @@
     "name": "Toning Lotion Normal/Dry Skin",
     "brand": "Clarins",
     "images": {
-      "url": "toning-lotion.jpg"
+      "url": "http://localhost:8080/products/5e5b973544ae6a86546a8979.jpg"
     },
     "size": {
       "amount": 400,
@@ -35,7 +35,7 @@
     "brand": "Exuviance",
     "name": "SkinRise Bionic Tonic",
     "images": {
-      "url": "Exuviance-SkinRise-Bionic-Tonic-36-Pads.jpg"
+      "url": "http://localhost:8080/products/5e5b973544ae6a86546a897a.jpg"
     },
     "size": {
       "amount": 60,
@@ -58,7 +58,7 @@
     "brand": "Moroccanoil",
     "name": "Moroccanoil Original Oil Treatment",
     "images": {
-      "url": "https://www.pricerunner.se/product/400x400/1914511929/Moroccanoil-Original-Oil-Treatment-100ml.jpg"
+      "url": "http://localhost:8080/products/5e5b973544ae6a86546a8989.jpg"
     },
     "size": {
       "amount": 100,
