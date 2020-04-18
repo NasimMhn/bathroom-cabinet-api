@@ -4,7 +4,7 @@
     "name": "Toning Lotion Normal/Dry Skin",
     "brand": "Clarins",
     "images": {
-      "url": "http://localhost:8080/products/5e5b973544ae6a86546a8979.jpg"
+      "url": "http://localhost:8080/products/5e5b973544ae6a86546a8979.gif"
     },
     "size": {
       "amount": 400,
@@ -35,7 +35,7 @@
     "brand": "Exuviance",
     "name": "SkinRise Bionic Tonic",
     "images": {
-      "url": "http://localhost:8080/products/5e5b973544ae6a86546a897a.jpg"
+      "url": "http://localhost:8080/products/5e5b973544ae6a86546a897a.gif"
     },
     "size": {
       "amount": 60,
@@ -58,7 +58,7 @@
     "brand": "Moroccanoil",
     "name": "Moroccanoil Original Oil Treatment",
     "images": {
-      "url": "http://localhost:8080/products/5e5b973544ae6a86546a8989.jpg"
+      "url": "http://localhost:8080/products/5e5b973544ae6a86546a8989.gif"
     },
     "size": {
       "amount": 100,
@@ -79,6 +79,68 @@
       },
       {
         "price": 318,
+        "website": "5e58383cf6eea26b079e5901"
+      }
+    ],
+    "finished": false
+  },
+  {
+    "_id": "5e5b973544ae6a86546a8988",
+    "brand": "Löwengrip",
+    "name": "Long Lasting Shampoo",
+    "images": {
+      "url": "http://localhost:8080/products/5e5b973544ae6a86546a8988.gif"
+    },
+    "size": {
+      "amount": 250,
+      "unit": "ml"
+    },
+    "prices": [
+      {
+        "price": 116,
+        "website": "5e5b8e15999899821c5f71f5"
+      },
+      {
+        "price": 120,
+        "website": "5e58383cf6eea26b079e5908"
+      },
+      {
+        "price": 290,
+        "website": "5e58383cf6eea26b079e5903"
+      },
+      {
+        "price": 101,
+        "website": "5e58383cf6eea26b079e5901"
+      }
+    ],
+    "finished": false
+  },
+  {
+    "_id": "5e5b973544ae6a86546a8978",
+    "brand": "Tan-Luxe",
+    "name": "The Gradual Illuminating Tanning Lotion",
+    "images": {
+      "url": "http://localhost:8080/products/5e5b973544ae6a86546a8978.gif"
+    },
+    "size": {
+      "amount": 250,
+      "unit": "ml"
+    },
+    "prices": [
+      {
+        "price": 274,
+        "website": "5e5b8e15999899821c5f71f5"
+      },
+      {
+        "price": 305,
+        "website": "5e58383cf6eea26b079e5908"
+      },
+      {
+        "price": 240,
+        "website": "5e58383cf6eea26b079e5903"
+      },
+      {
+        "price": 323,
         "website": "5e58383cf6eea26b079e5901"
       }
     ],
