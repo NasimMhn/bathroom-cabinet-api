@@ -1,7 +1,8 @@
 import mongoose from 'mongoose'
 
-// Setup of productmodel 
-const Product = mongoose.model('Product', {
+// Setup of product schema 
+export const productSchema = new mongoose.Schema({
+  _id: mongoose.Schema.ObjectId,
   // Properties defined here match the keys from the json file
   name: {
     type: String,
@@ -43,5 +44,5 @@ const Product = mongoose.model('Product', {
   },
 })
 
-module.exports = Product
+module.exports = mongoose.model('Product', productSchema)
 
