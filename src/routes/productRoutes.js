@@ -88,54 +88,38 @@ router.delete('/id/:id', async (req, res, next) => {
 // GET products with query
 
 
-router.get('/', async (req, res, next) => {
-  console.log("GET /product", req.query)
-
-  // This is a query object used to query websites
-  try {
-    const products = await Product.find().populate('website')
-    res.json(products)
-  }
-  catch (err) {
-    next(err)
-  }
-})
-
 // router.get('/', async (req, res, next) => {
 //   console.log("GET /product", req.query)
 
 //   // This is a query object used to query websites
-
-//   let websiteQuery = {
-//     "address": req.query.websites,
-//     "brand": req.query.brand ? req.query.brand : undefined,
-//     "price": req.query.price ? req.query.price.sort('desc').exec() : undefined,
-//   }
-
-//   Object.keys(websiteQuery).forEach(key => websiteQuery[key] === undefined ? delete websiteQuery[key] : {}) // Removes keys which are undefined (empty)
-
-//   const websites = await Website.find(websiteQuery).select('_id')
-//   let website_ids = websites.map(({ _id }) => (new mongoose.Types.ObjectId(_id))) // array with id's of filtered websites
-
-
-//   // This is a query object used to query the products
-//   let productQuery = {
-//     "brand": req.query.brand || undefined,
-//     "detail": req.query.detail ? req.query.detail : undefined,
-//     "volume": { $gte: req.query.minVolume || 0, $lte: req.query.maxVolume || 1000 },
-//     "finished": req.query.finished ? req.query.finished : undefined,
-//   }
-//   Object.keys(productQuery).forEach(key => productQuery[key] === undefined ? delete productQuery[key] : {}) // Removes keys which are undefined (empty)
-
 //   try {
-//     const products = await Product.find(productQuery).where('websites').in(website_ids)
-//       .populate('websites')
+//     const products = await Product.find().populate('website')
 //     res.json(products)
 //   }
 //   catch (err) {
 //     next(err)
 //   }
 // })
+
+router.get('/', async (req, res, next) => {
+  console.log("GET /product", req.query)
+
+  // This is a query object used to query the products
+  let productQuery = {
+    "brand": new RegExp(req.query.brand, 'i') || undefined,
+    "name": new RegExp(req.query.name, 'i') || undefined,
+    "size": req.query.size ? req.query.size : undefined, ///How to query size?
+  }
+  Object.keys(productQuery).forEach(key => productQuery[key] === undefined ? delete productQuery[key] : {}) // Removes keys which are undefined (empty)
+
+  try {
+    const products = await Product.find(productQuery)
+    res.json(products)
+  }
+  catch (err) {
+    next(err)
+  }
+})
 
 
 module.exports = router
