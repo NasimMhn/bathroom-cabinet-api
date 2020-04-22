@@ -27,8 +27,7 @@
         "price": 80,
         "website": "5e58383cf6eea26b079e590e"
       }
-    ],
-    "finished": true
+    ]
   },
   {
     "_id": "5e5b973544ae6a86546a897a",
@@ -50,8 +49,7 @@
         "price": 120,
         "website": "5e58383cf6eea26b079e591b"
       }
-    ],
-    "finished": false
+    ]
   },
   {
     "_id": "5e5b973544ae6a86546a8989",
@@ -81,8 +79,7 @@
         "price": 318,
         "website": "5e58383cf6eea26b079e5901"
       }
-    ],
-    "finished": false
+    ]
   },
   {
     "_id": "5e5b973544ae6a86546a8988",
@@ -112,8 +109,7 @@
         "price": 101,
         "website": "5e58383cf6eea26b079e5901"
       }
-    ],
-    "finished": false
+    ]
   },
   {
     "_id": "5e5b973544ae6a86546a8978",
@@ -143,7 +139,6 @@
         "price": 323,
         "website": "5e58383cf6eea26b079e5901"
       }
-    ],
-    "finished": false
+    ]
   }
 ]

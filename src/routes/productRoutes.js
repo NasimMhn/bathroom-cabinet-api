@@ -18,16 +18,6 @@ const router = express.Router()
 
 // Get product by id
 
-// router.get('/', async (req, res, next) => {
-//   console.log("GET /MyCabinetProducts ", req.query)
-//   try {
-//     res.json(products)
-//   }
-//   catch (err) {
-//     next(err)
-//   }
-// })
-
 router.get('/id/:id', async (req, res, next) => {
   console.log("GET /product/id/", req.params.id)
   try {
@@ -40,66 +30,18 @@ router.get('/id/:id', async (req, res, next) => {
 })
 
 // POST a new product
-router.post('/', async (req, res, next) => {
-  console.log("POST /Product ", req.body)
-  try {
-    const product = await new Product(req.body).save()
-    res.json(product)
-  }
-  catch (err) {
-    console.error("Error:", err)
-    next(err)
-  }
-})
-
-// POST a product as finished/unfinished
-router.post('/finished/id/:id', async (req, res, next) => {
-  console.log("POST /finished/ ", req.body)
-  try {
-    const product = await Product.findById(req.params.id)
-    product.finished = !product.finished
-    product.save()
-    res.json(product)
-  }
-  catch (err) {
-    console.error("Error:", err)
-    next(err)
-  }
-})
-
-// DELETE
-router.delete('/id/:id', async (req, res, next) => {
-  console.log("DELETE /product/id/", req.params.id)
-  try {
-    const product = await Product.findById(req.params.id)
-    // If no product found
-    if (product == null) {
-      throw createError(404, 'No product with this id found')
-    }
-    product.deleteOne()
-    res.json(product).status(204)
-  }
-  catch (err) {
-    next(err)
-  }
-})
-
-
-// GET products with query
-
-
-// router.get('/', async (req, res, next) => {
-//   console.log("GET /product", req.query)
-
-//   // This is a query object used to query websites
+// router.post('/', async (req, res, next) => {
+//   console.log("POST /Product ", req.body)
 //   try {
-//     const products = await Product.find().populate('website')
-//     res.json(products)
+//     const product = await new Product(req.body).save()
+//     res.json(product)
 //   }
 //   catch (err) {
+//     console.error("Error:", err)
 //     next(err)
 //   }
 // })
+
 
 router.get('/', async (req, res, next) => {
   console.log("GET /product", req.query)

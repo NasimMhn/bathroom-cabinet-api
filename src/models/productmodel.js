@@ -36,11 +36,7 @@ export const productSchema = new mongoose.Schema({
         default: null
       }
     }
-  ],
-  finished: {
-    type: Boolean,
-    default: false
-  },
+  ]
 })
 
 module.exports = mongoose.model('Product', productSchema)

@@ -4,7 +4,7 @@ import mongoose from 'mongoose'
 export const userSchema = new mongoose.Schema({
   // Properties defined here match the keys from the json file
   name: {
-    type: String,
+    type: String
   },
   cabinet: [
     {
