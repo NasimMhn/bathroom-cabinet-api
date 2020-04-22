@@ -29,19 +29,6 @@ router.get('/id/:id', async (req, res, next) => {
   }
 })
 
-// POST a new product
-// router.post('/', async (req, res, next) => {
-//   console.log("POST /Product ", req.body)
-//   try {
-//     const product = await new Product(req.body).save()
-//     res.json(product)
-//   }
-//   catch (err) {
-//     console.error("Error:", err)
-//     next(err)
-//   }
-// })
-
 
 router.get('/', async (req, res, next) => {
   console.log("GET /product", req.query)

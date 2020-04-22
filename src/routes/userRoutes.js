@@ -9,16 +9,13 @@ import Product from '../models/productmodel'
 
 import createError from 'http-errors'
 
-
 const router = express.Router()
-
 
 
 // ---------------------- USER ROUTES ------------------------- //
 
 // Get User products 
-
-router.get('/:id', async (req, res) => {
+router.get('/:id', async (req, res, next) => {
   console.log(`GET /user/${req.params.id}`)
   try {
     const userCabinet = await User.findById(req.params.id).populate({ path: 'cabinet.product', model: Product })
@@ -33,6 +30,18 @@ router.get('/:id', async (req, res) => {
   }
 })
 
+
+router.post('/:userId/add_product/:productId', async (req, res, next) => {
+  console.log(`GET /user/${req.body}`)
+  try {
+    const userCabinet = await User.findOne({ "_id": req.params.userId, "_id": req.body.productId },
+      { $push: { cabinet: { "name": name, "brand": brand, "size": size } } })
+    res.json(userCabinet)
+  }
+  catch (err) {
+    next(err)
+  }
+})
 
 // POST a new product to user cabinet
 // router.post('/:id/add_product/id/:id', async (req, res, next) => {
