@@ -31,18 +31,19 @@ router.get('/id/:id', async (req, res, next) => {
 
 
 router.get('/', async (req, res, next) => {
-  console.log("GET /product", req.query)
-
-  // This is a query object used to query the products
-  let productQuery = {
-    "brand": new RegExp(req.query.brand, 'i') || undefined,
-    "name": new RegExp(req.query.name, 'i') || undefined,
-    "size": req.query.size ? req.query.size : undefined, ///How to query size?
-  }
-  Object.keys(productQuery).forEach(key => productQuery[key] === undefined ? delete productQuery[key] : {}) // Removes keys which are undefined (empty)
+  console.log(`GET /product?search=${req.query.search}`)
 
   try {
-    const products = await Product.find(productQuery)
+    const products = await Product.find(({
+      "$or": [
+        { name: { '$regex': req.query.search, '$options': 'i' } },
+        { brand: { '$regex': req.query.search, '$options': 'i' } }
+      ]
+    }))
+    console.log("-------------------------------")
+    products.map(product => console.log(`BRAND: ${product.brand}    NAME: ${product.name}`))
+    console.log("-------------------------------")
+
     res.json(products)
   }
   catch (err) {
