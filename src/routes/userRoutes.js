@@ -14,6 +14,24 @@ const router = express.Router()
 
 // ---------------------- USER ROUTES ------------------------- //
 
+// POST a new product to user cabinet
+router.post('/add_product/:productId', async (req, res, next) => {
+  console.log("POST req.body:", req.body)
+  console.log("req.params.productId:", req.params.productId)
+  console.log("req.body.userId", req.body.userId)
+  try {
+    const user = await User.findByIdAndUpdate(req.body.userId,
+      { $addToSet: { cabinet: { product: req.params.productId } } },
+      { safe: true, upsert: true, new: true })
+    console.log("user", user)
+    res.json(user)
+  }
+  catch (err) {
+    console.error("Error:", err)
+    next(err)
+  }
+})
+
 // Get User products 
 router.get('/:id', async (req, res, next) => {
   console.log(`GET /user/${req.params.id}`)
@@ -31,30 +49,6 @@ router.get('/:id', async (req, res, next) => {
 })
 
 
-router.post('/:userId/add_product/:productId', async (req, res, next) => {
-  console.log(`GET /user/${req.body}`)
-  try {
-    const userCabinet = await User.findOne({ "_id": req.params.userId, "_id": req.body.productId },
-      { $push: { cabinet: { "name": name, "brand": brand, "size": size } } })
-    res.json(userCabinet)
-  }
-  catch (err) {
-    next(err)
-  }
-})
-
-// POST a new product to user cabinet
-// router.post('/:id/add_product/id/:id', async (req, res, next) => {
-//   console.log("POST /user/ ", req.body)
-//   try {
-//     const newProduct = await new Product({ product: req.body.product }).save()
-//     res.json(newProduct)
-//   }
-//   catch (err) {
-//     console.error("Error:", err)
-//     next(err)
-//   }
-// })
 
 
 
