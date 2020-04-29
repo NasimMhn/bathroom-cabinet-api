@@ -32,7 +32,9 @@ router.get('/id/:id', async (req, res, next) => {
 
 router.get('/', async (req, res, next) => {
   console.log(`GET /product?search=${req.query.search}`)
-
+  if (!req.query.search) {
+    req.query.search = ""
+  }
   try {
     const products = await Product.find(({
       "$or": [
