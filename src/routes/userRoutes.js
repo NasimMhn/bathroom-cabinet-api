@@ -23,8 +23,9 @@ router.post('/add_product/:productId', async (req, res, next) => {
     const user = await User.findByIdAndUpdate(req.body.userId,
       { $addToSet: { cabinet: { product: req.params.productId } } },
       { safe: true, upsert: true, new: true })
+      .populate({ path: 'cabinet.product', model: Product })
     console.log("user", user)
-    res.json(user)
+    res.json(user.cabinet)
   }
   catch (err) {
     console.error("Error:", err)
