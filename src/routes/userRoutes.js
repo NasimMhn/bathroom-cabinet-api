@@ -13,18 +13,14 @@ const router = express.Router()
 
 
 // ---------------------- USER ROUTES ------------------------- //
-
 // POST a new product to user cabinet
-router.post('/add_product/:productId', async (req, res, next) => {
-  console.log("POST req.body:", req.body)
-  console.log("req.params.productId:", req.params.productId)
-  console.log("req.body.userId", req.body.userId)
+router.delete('/remove_product/:productId', async (req, res, next) => {
+  console.log(`/remove_product/${req.params.productId}\n   req.body.userId:${req.body.userId})`)
   try {
     const user = await User.findByIdAndUpdate(req.body.userId,
-      { $addToSet: { cabinet: { product: req.params.productId } } },
+      { $pull: { cabinet: { product: req.params.productId } } },
       { safe: true, upsert: true, new: true })
       .populate({ path: 'cabinet.product', model: Product })
-    console.log("user", user)
     res.json(user.cabinet)
   }
   catch (err) {
@@ -33,13 +29,30 @@ router.post('/add_product/:productId', async (req, res, next) => {
   }
 })
 
-// Get User products 
-router.get('/:id', async (req, res, next) => {
+// POST a new product to user cabinet
+router.post('/add_product/:productId', async (req, res, next) => {
+  console.log(`/add_product/${req.params.productId}\n   req.body.userId:${req.body.userId})`)
+  try {
+    const user = await User.findByIdAndUpdate(req.body.userId,
+      { $addToSet: { cabinet: { product: req.params.productId } } },
+      { safe: true, upsert: true, new: true })
+      .populate({ path: 'cabinet.product', model: Product })
+    // console.log("user", user)
+    res.json(user.cabinet)
+  }
+  catch (err) {
+    console.error("Error:", err)
+    next(err)
+  }
+})
+
+// Get User products
+router.get('/:id/cabinet', async (req, res, next) => {
   console.log(`GET /user/${req.params.id}`)
   try {
-    const userCabinet = await User.findById(req.params.id).populate({ path: 'cabinet.product', model: Product })
-    if (userCabinet) {
-      res.json(userCabinet)
+    const user = await User.findById(req.params.id).populate({ path: 'cabinet.product', model: Product })
+    if (user) {
+      res.json(user.cabinet)
     } else {
       res.status(404).json({ error: 'User not found' })
     }
