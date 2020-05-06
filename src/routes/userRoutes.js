@@ -65,22 +65,32 @@ router.get('/:id/cabinet', async (req, res, next) => {
 
 
 
-
-
 // POST a product as finished/unfinished
-// router.post('/finished/id/:id', async (req, res, next) => {
-//   console.log("POST /finished/ ", req.body)
-//   try {
-//     const product = await Product.findById(req.params.id)
-//     product.finished = !product.finished
-//     product.save()
-//     res.json(product)
-//   }
-//   catch (err) {
-//     console.error("Error:", err)
-//     next(err)
-//   }
-// })
+router.post('/finished/:productId', async (req, res, next) => {
+  console.log(`user/finished/${req.params.productId}\n   req.body.userId:${req.body.userId})`)
+  try {
+    const { cabinet } = await User.findById(req.body.userId)
+
+    const updatedCabinet = cabinet.map(item => {
+      if (item.product == req.params.productId) {
+        return {
+          "_id": item._id,
+          "product": item.product,
+          "finished": !item.finished,
+        }
+      }
+      return item
+    })
+    const user = await User.findByIdAndUpdate(req.body.userId,{ cabinet: updatedCabinet },
+      { safe: true, upsert: true, new: true })
+      .populate({ path: 'cabinet.product', model: Product })
+    res.json(user.cabinet)
+  }
+  catch (err) {
+    console.error("Error:", err)
+    next(err)
+  }
+})
 
 
 // DELETE
