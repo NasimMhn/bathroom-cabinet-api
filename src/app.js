@@ -13,7 +13,7 @@ import ResetDB from './resetdb'
 import productRoutes from './routes/productRoutes'
 import userRoutes from './routes/userRoutes'
 import webshopRoutes from './routes/webshopRoutes'
-
+import priceRoutes from './routes/priceRoutes'
 
 const app = express()
 
@@ -36,7 +36,7 @@ app.use(express.static('public'))
 app.use('/product', productRoutes)
 app.use('/user', userRoutes)
 app.use('/webshop', webshopRoutes)
-
+app.use('/price', priceRoutes)
 
 app.use((req, res, next) => {
   if (mongoose.connection.readyState === 1) {
