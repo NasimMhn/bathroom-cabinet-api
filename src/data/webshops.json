@@ -5,7 +5,8 @@
     "website": "https://www.ahlens.se",
     "images": {
       "url": "http://192.168.1.181:8080/webshop/5e58383cf6eea26b079e790d.png"
-    }
+    },
+    "rating": 4.1
   },
   {
     "_id": "5e58383cf6eea26b079e791d",
@@ -13,7 +14,8 @@
     "website": "https://www.parfym.se",
     "images": {
       "url": "http://192.168.1.181:8080/webshop/5e58383cf6eea26b079e791d.png"
-    }
+    },
+    "rating": 4.6
   },
   {
     "_id": "5e58383cf6eea26b079e792d",
@@ -21,7 +23,8 @@
     "website": "https://daystyle.se",
     "images": {
       "url": "http://192.168.1.181:8080/webshop/5e58383cf6eea26b079e792d-small.png"
-    }
+    },
+    "rating": 3.2
   },
   {
     "_id": "5e58383cf6eea26b079e793d",
@@ -29,7 +32,8 @@
     "website": "https://skincity.se",
     "images": {
       "url": "http://192.168.1.181:8080/webshop/5e58383cf6eea26b079e793d-medium.png"
-    }
+    },
+    "rating": null
   },
   {
     "_id": "5e58383cf6eea26b079e794d",
@@ -37,6 +41,7 @@
     "website": "https://www.kicks.se/",
     "images": {
       "url": "http://192.168.1.181:8080/webshop/5e58383cf6eea26b079e794d-medium.png"
-    }
+    },
+    "rating": 4.3
   }
 ]

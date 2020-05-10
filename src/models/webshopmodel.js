@@ -14,7 +14,11 @@ export const webshopSchema = mongoose.Schema({
     url: {
       type: String,
       default: "http://192.168.1.181:8080/webshop/no-image.png"
-    },
+    }
+  },
+  rating: {
+    type: Number,
+    default: null
   }
 })
 
