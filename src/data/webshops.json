@@ -6,5 +6,37 @@
     "images": {
       "url": "http://192.168.1.181:8080/webshop/5e58383cf6eea26b079e790d.png"
     }
+  },
+  {
+    "_id": "5e58383cf6eea26b079e791d",
+    "name": "Parfym.se",
+    "website": "https://www.parfym.se",
+    "images": {
+      "url": "http://192.168.1.181:8080/webshop/5e58383cf6eea26b079e791d.png"
+    }
+  },
+  {
+    "_id": "5e58383cf6eea26b079e792d",
+    "name": "Daystyle.se",
+    "website": "https://daystyle.se",
+    "images": {
+      "url": "http://192.168.1.181:8080/webshop/5e58383cf6eea26b079e792d-small.png"
+    }
+  },
+  {
+    "_id": "5e58383cf6eea26b079e793d",
+    "name": "Skincity",
+    "website": "https://skincity.se",
+    "images": {
+      "url": "http://192.168.1.181:8080/webshop/5e58383cf6eea26b079e793d-medium.png"
+    }
+  },
+  {
+    "_id": "5e58383cf6eea26b079e794d",
+    "name": "Kicks",
+    "website": "https://www.kicks.se/",
+    "images": {
+      "url": "http://192.168.1.181:8080/webshop/5e58383cf6eea26b079e794d-medium.png"
+    }
   }
 ]

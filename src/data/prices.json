@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "5e58383cf6eea26b879e590b",
+    "product": "5e5b973544ae6a86546a8979",
+    "webshop": "5e58383cf6eea26b079e790d",
+    "url": "https://www.ahlens.se/Skonhet/hudvard/ansikte/ansiktsvatten-facemist-15241/clarins-toning-lotion-normal-to-dry-skin-89712952",
+    "price": 250
+  },
+  {
+    "_id": "5e58383cf6eea26b879e591b",
+    "product": "5e5b973544ae6a86546a8979",
+    "webshop": "5e58383cf6eea26b079e791d",
+    "url": "https://www.parfym.se/hudvard/clarins/clarins-toning-lotion-normal-or-dry-skin?prod=1131",
+    "price": 235
+  },
+  {
+    "_id": "5e58383cf6eea26b879e592b",
+    "product": "5e5b973544ae6a86546a897a",
+    "webshop": "5e58383cf6eea26b079e791d",
+    "url": "https://www.parfym.se/hudvard/exuviance/exuviance-skinrise-bionic-tonic-60ml-36-pads",
+    "price": 215
+  },
+  {
+    "_id": "5e58383cf6eea26b879e593b",
+    "product": "5e5b973544ae6a86546a897a",
+    "webshop": "5e58383cf6eea26b079e792d",
+    "url": "https://daystyle.se/webbshop/varumarken/exuviance/exuviance-skin-rise-bionic-tonic-pads",
+    "price": 359
+  },
+  {
+    "_id": "5e58383cf6eea26b879e594b",
+    "product": "5e5b973544ae6a86546a897a",
+    "webshop": "5e58383cf6eea26b079e793d",
+    "url": "https://skincity.se/sv/skinrise-bionic-tonic-pads",
+    "price": 449
+  },
+  {
+    "_id": "5e58383cf6eea26b879e596b",
+    "product": "5e5b973544ae6a86546a8989",
+    "webshop": "5e58383cf6eea26b079e791d",
+    "url": "https://www.parfym.se/harvard/moroccanoil/treatment?prod=17587",
+    "price": 341
+  },
+  {
+    "_id": "5e58383cf6eea26b879e597b",
+    "product": "5e5b973544ae6a86546a8989",
+    "webshop": "5e58383cf6eea26b079e790d",
+    "url": "https://www.ahlens.se/Skonhet/har/harstyling/inpackning-behandling-15281/moroccanoil-oil-treatment-100-ml-43398023/",
+    "price": 419
+  },
+  {
+    "_id": "5e58383cf6eea26b879e598b",
+    "product": "5e5b973544ae6a86546a8989",
+    "webshop": "5e58383cf6eea26b079e794d",
+    "url": "https://www.kicks.se/moroccanoil/har/harvard/harolja/moroccanoil-treatment-100-ml",
+    "price": 459
+  }
+]
