@@ -1,11 +1,11 @@
 // Models
 import Product from './models/productmodel'
-import Website from './models/websitemodel'
+import Webshop from './models/webshopmodel'
 import User from './models/usermodel'
 
 // JSON data
 import mockProducts from './data/products.json'
-import mockWebsites from './data/websites.json'
+import mockWebshops from './data/webshops.json'
 import mockUsers from './data/users.json'
 
 // Populating database with test data
@@ -18,9 +18,9 @@ const ResetDB = async () => {
   })
 
   // Removing and repopulating websites
-  await Website.deleteMany({})
-  mockWebsites.forEach((website) => {
-    new Website(website).save()
+  await Webshop.deleteMany({})
+  mockWebshops.forEach((webshop) => {
+    new Webshop(webshop).save()
   })
 
   // Removing and repopulating users

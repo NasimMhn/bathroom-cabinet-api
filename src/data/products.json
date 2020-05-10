@@ -9,25 +9,7 @@
     "size": {
       "amount": 400,
       "unit": "ml"
-    },
-    "prices": [
-      {
-        "price": 100,
-        "website": "5e5b8e15999899821c5f71fa"
-      },
-      {
-        "price": 120,
-        "website": "5e58383cf6eea26b079e590c"
-      },
-      {
-        "price": 98,
-        "website": "5e58383cf6eea26b079e590b"
-      },
-      {
-        "price": 80,
-        "website": "5e58383cf6eea26b079e590e"
-      }
-    ]
+    }
   },
   {
     "_id": "5e5b973544ae6a86546a897a",
@@ -39,17 +21,7 @@
     "size": {
       "amount": 60,
       "unit": "ml"
-    },
-    "prices": [
-      {
-        "price": 100,
-        "website": "5e58383cf6eea26b079e591a"
-      },
-      {
-        "price": 120,
-        "website": "5e58383cf6eea26b079e591b"
-      }
-    ]
+    }
   },
   {
     "_id": "5e5b973544ae6a86546a8989",
@@ -61,25 +33,7 @@
     "size": {
       "amount": 100,
       "unit": "ml"
-    },
-    "prices": [
-      {
-        "price": 349,
-        "website": "5e5b8e15999899821c5f71f5"
-      },
-      {
-        "price": 289,
-        "website": "5e58383cf6eea26b079e5908"
-      },
-      {
-        "price": 230,
-        "website": "5e58383cf6eea26b079e5903"
-      },
-      {
-        "price": 318,
-        "website": "5e58383cf6eea26b079e5901"
-      }
-    ]
+    }
   },
   {
     "_id": "5e5b973544ae6a86546a8988",
@@ -91,25 +45,7 @@
     "size": {
       "amount": 250,
       "unit": "ml"
-    },
-    "prices": [
-      {
-        "price": 116,
-        "website": "5e5b8e15999899821c5f71f5"
-      },
-      {
-        "price": 120,
-        "website": "5e58383cf6eea26b079e5908"
-      },
-      {
-        "price": 290,
-        "website": "5e58383cf6eea26b079e5903"
-      },
-      {
-        "price": 101,
-        "website": "5e58383cf6eea26b079e5901"
-      }
-    ]
+    }
   },
   {
     "_id": "5e5b973544ae6a86546a8978",
@@ -121,24 +57,6 @@
     "size": {
       "amount": 250,
       "unit": "ml"
-    },
-    "prices": [
-      {
-        "price": 274,
-        "website": "5e5b8e15999899821c5f71f5"
-      },
-      {
-        "price": 305,
-        "website": "5e58383cf6eea26b079e5908"
-      },
-      {
-        "price": 240,
-        "website": "5e58383cf6eea26b079e5903"
-      },
-      {
-        "price": 323,
-        "website": "5e58383cf6eea26b079e5901"
-      }
-    ]
+    }
   }
 ]

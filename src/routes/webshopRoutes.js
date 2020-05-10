@@ -1,9 +1,9 @@
-// import express from 'express'
+import express from 'express'
 
-// // Models
-// import Website from '../models/websitemodel'
+// Models
+import Webshop from '../models/webshopmodel'
 
-// const router = express.Router()
+const router = express.Router()
 
 // // ------------------ WEBSITE ROUTES  ------------------------- //
 
@@ -41,4 +41,4 @@
 //   }
 // })
 
-// module.exports = router
+module.exports = router

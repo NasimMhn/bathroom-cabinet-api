@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 
 
 //setup of websites
-export const websiteSchema = mongoose.Schema({
+export const webshopSchema = mongoose.Schema({
   // Properties defined here match the keys from the json file
   name: {
     type: String,
@@ -16,4 +16,4 @@ export const websiteSchema = mongoose.Schema({
 
 
 
-module.exports = mongoose.model('Website', websiteSchema)
+module.exports = mongoose.model('Webshop', webshopSchema)

@@ -4,7 +4,6 @@ import mongoose, { Query } from 'mongoose'
 
 // Models
 import Product from '../models/productmodel'
-import Website from '../models/websitemodel'
 
 
 import createError from 'http-errors'

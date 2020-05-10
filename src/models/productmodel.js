@@ -24,19 +24,7 @@ export const productSchema = new mongoose.Schema({
       type: String,
       default: null
     }
-  },
-  prices: [
-    {
-      website: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Website',
-      },
-      price: {
-        type: Number,
-        default: null
-      }
-    }
-  ]
+  }
 })
 
 module.exports = mongoose.model('Product', productSchema)
