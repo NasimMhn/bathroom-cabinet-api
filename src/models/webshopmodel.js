@@ -8,9 +8,15 @@ export const webshopSchema = mongoose.Schema({
   name: {
     type: String,
   },
-  url: {
+  website: {
     type: String,
   },
+  images: {
+    url: {
+      type: String,
+      default: "http://192.168.1.181:8080/webshop/no-image.png"
+    },
+  }
 })
 
 
