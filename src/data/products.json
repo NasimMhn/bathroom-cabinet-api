@@ -4,7 +4,7 @@
     "name": "Toning Lotion Normal/Dry Skin",
     "brand": "Clarins",
     "images": {
-      "url": "http://192.168.1.181:8080/products/5e5b973544ae6a86546a8979.gif"
+      "url": "http://192.168.1.181:8080/products/5e5b973544ae6a86546a8979.png"
     },
     "size": {
       "amount": 400,
@@ -16,7 +16,7 @@
     "brand": "Exuviance",
     "name": "SkinRise Bionic Tonic",
     "images": {
-      "url": "http://192.168.1.181:8080/products/5e5b973544ae6a86546a897a.gif"
+      "url": "http://192.168.1.181:8080/products/5e5b973544ae6a86546a897a.png"
     },
     "size": {
       "amount": 60,
@@ -28,7 +28,7 @@
     "brand": "Moroccanoil",
     "name": "Moroccanoil Original Oil Treatment",
     "images": {
-      "url": "http://192.168.1.181:8080/products/5e5b973544ae6a86546a8989.gif"
+      "url": "http://192.168.1.181:8080/products/5e5b973544ae6a86546a8989.png"
     },
     "size": {
       "amount": 100,
@@ -40,7 +40,7 @@
     "brand": "Löwengrip",
     "name": "Long Lasting Shampoo",
     "images": {
-      "url": "http://192.168.1.181:8080/products/5e5b973544ae6a86546a8988.gif"
+      "url": "http://192.168.1.181:8080/products/5e5b973544ae6a86546a8988.png"
     },
     "size": {
       "amount": 250,
@@ -52,7 +52,7 @@
     "brand": "Tan-Luxe",
     "name": "The Gradual Illuminating Tanning Lotion",
     "images": {
-      "url": "http://192.168.1.181:8080/products/5e5b973544ae6a86546a8978.gif"
+      "url": "http://192.168.1.181:8080/products/5e5b973544ae6a86546a8978.png"
     },
     "size": {
       "amount": 250,
